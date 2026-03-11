@@ -1,0 +1,376 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration:none;
+    list-style:none;
+}
+
+body{
+    line-height:1.6;
+}
+
+/* HEADER */
+
+.header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    padding:20px 10%;
+    background:#2f2f2f;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100;
+}
+
+.logo{
+    font-size:25px;
+    color:white;
+    font-weight:600;
+}
+
+.logo span{
+    color:orangered;
+}
+
+.navbar a{
+    margin:0 15px;
+    color:white;
+    font-size:16px;
+}
+
+.contact{
+    background:white;
+    padding:10px 20px;
+    border-radius:6px;
+    color:black;
+    font-weight:500;
+}
+
+/* HOME */
+
+.home{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:120px 10% 80px;
+    gap:60px;
+    background:#f2f2f2;
+}
+
+.home-content{
+    max-width:600px;
+}
+
+.home-content h3{
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.home-content h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.home-content span{
+    color:orangered;
+}
+
+.home-content p{
+    margin:20px 0 30px;
+}
+
+.btn-box{
+    display:flex;
+    gap:20px;
+}
+
+.btn-1{
+    padding:12px 25px;
+    border:none;
+    background:black;
+    color:white;
+    border-radius:6px;
+}
+
+.btn-2{
+    padding:12px 25px;
+    border:none;
+    background:orangered;
+    color:white;
+    border-radius:6px;
+}
+
+/* IMAGE */
+
+.img-box img{
+    width:420px;
+    border-radius:50%;
+}
+
+/* ABOUT */
+
+.about{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:80px;
+    padding:100px 10%;
+    background:black;
+    color:white;
+}
+
+.about-img img{
+    width:380px;
+    border-radius:50%;
+    box-shadow:0 0 30px orangered;
+}
+
+.about-content{
+    max-width:600px;
+}
+
+.heading{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.about-content h3{
+    font-size:36px;
+    margin-bottom:20px;
+}
+
+.about-content span{
+    color:orangered;
+}
+
+.about-content p{
+    margin-bottom:25px;
+}
+
+/* CONTACT */
+
+.contact-form{
+    padding:100px 10%;
+    text-align:center;
+    background:#f2f2f2;
+}
+
+.contact-form h2{
+    font-size:30px;
+    margin-bottom:40px;
+}
+
+.input-box{
+    display:flex;
+    gap:20px;
+    margin-bottom:20px;
+}
+
+.input-box input{
+    width:100%;
+    padding:14px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+textarea{
+    width:100%;
+    padding:15px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    margin-bottom:20px;
+}
+
+.footer{
+    background:black;
+    color:white;
+    padding:40px 10%;
+    text-align:center;
+}
+
+.social{
+    margin-bottom:20px;
+}
+
+.social a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    margin:10px;
+    color:white;
+    border:2px solid orangered;
+    transition:0.3s ease;
+}
+
+.social a:hover{
+    background:orangered;
+    transform:translateY(-5px) scale(1.2);
+    box-shadow:0 0 15px orangered;
+}
+
+.social a i{
+    font-size:18px;
+}
+
+.list{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-bottom:20px;
+}
+
+.list a{
+    color:white;
+}
+
+.copyright{
+    font-size:14px;
+    color:#aaa;
+}
+
+/* Tablet */
+@media (max-width: 1024px){
+
+    .header{
+        padding:20px 5%;
+    }
+
+    .home{
+        flex-direction:column;
+        text-align:center;
+        padding:120px 5% 80px;
+    }
+
+    .home-content{
+        max-width:100%;
+    }
+
+    .img-box img{
+        width:320px;
+        margin-top:30px;
+    }
+
+    .about{
+        flex-direction:column;
+        text-align:center;
+        gap:40px;
+    }
+
+    .about-img img{
+        width:320px;
+    }
+
+    .input-box{
+        flex-direction:column;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 768px){
+
+    .navbar{
+        display:none;
+    }
+
+    .header{
+        padding:15px 5%;
+    }
+
+    .logo{
+        font-size:20px;
+    }
+
+    .contact{
+        padding:8px 15px;
+        font-size:14px;
+    }
+
+    .home-content h1{
+        font-size:34px;
+    }
+
+    .home-content h3{
+        font-size:20px;
+    }
+
+    .home-content p{
+        font-size:14px;
+    }
+
+    .btn-box{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .img-box img{
+        width:260px;
+    }
+
+    .about-content h3{
+        font-size:28px;
+    }
+
+    .about-img img{
+        width:260px;
+    }
+
+    .contact-form{
+        padding:80px 5%;
+    }
+
+    textarea{
+        height:150px;
+    }
+
+}
+
+
+/* Small Mobile */
+@media (max-width: 480px){
+
+    .home{
+        padding:100px 5% 60px;
+    }
+
+    .home-content h1{
+        font-size:28px;
+    }
+
+    .home-content p{
+        font-size:13px;
+    }
+
+    .btn-1,
+    .btn-2{
+        padding:10px 20px;
+        font-size:14px;
+    }
+
+    .img-box img{
+        width:220px;
+    }
+
+    .about-img img{
+        width:220px;
+    }
+
+    .social a{
+        width:35px;
+        height:35px;
+    }
+
+    .social a i{
+        font-size:16px;
+    }
+
+}
